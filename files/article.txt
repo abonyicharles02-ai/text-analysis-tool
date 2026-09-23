@@ -1,0 +1,10 @@
+Your $10,000 Stake Could Be Worth $6,750 Or $14,800 A Year Out
+
+From today's price the ceiling is about 48% higher and the floor about 33% lower. A $10,000 stake could end the year near $6,750 or near $14,800. The upside is larger in dollars for a mechanical reason: a share price stops at zero and has no top.
+
+Those bounds are odds rather than a forecast: roughly a two-in-three chance of finishing between them, and about a 16% chance of ending beyond each one. Nothing in that says which way. It says how much room a holder has to give, and Netflix has needed that room before.
+
+Netflix Just Had A Year Almost This Volatile
+
+Implied volatility of 39.1% runs only slightly above the 36.0% realized volatility the stock actually delivered over the past year, and that small gap is the normal premium option sellers charge. A broader reading of its implied volatility also sits in the middle of its own range for the past year. This is an options market at its usual setting for Netflix. The usual setting is the problem.
+The past year shows what that setting does. Over the trailing twelve months the stock returned -33.3%, while the S&P 500 returned 17.0%. A repeat of that year would land close to the floor priced for the year ahead, and that floor is one standard deviation, nothing more. The band is arithmetic. Which end you land at is the business.
