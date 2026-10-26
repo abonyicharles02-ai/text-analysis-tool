@@ -2,13 +2,14 @@ import nltk
 import re
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.stem import WordNetLemmatizer
-from nltk.corpus import wordnet
+from nltk.corpus import wordnet, stopwords
 from random_username.generate import generate_username
+nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger_eng')
 nltk.download('omw-1.4')
 wordLemmatizer = WordNetLemmatizer()
-
+stopWords = set(stopwords.words('english'))
 
 # Welcome User
 def welcomeUser():
@@ -103,7 +104,7 @@ def cleansedWordList(posTaggedWordTuples):
         word = posTaggedWordTuple[0]
         pos = posTaggedWordTuple[1]
         cleansedWord = word.replace("-", "").lower()
-        if (not re.search(invalidWordPattern, cleansedWord)) and len(word) > 1:
+        if (not re.search(invalidWordPattern, cleansedWord)) and len(word) > 1 and cleansedWord not in stopWords:
             cleansedWords.append(wordLemmatizer.lemmatize(cleansedWord, treebankPosToWordnetPos(pos)))
     return cleansedWords
 
@@ -128,4 +129,4 @@ articleWordsCleansed = cleansedWordList(wordsPosTagged)
 
 # Print the testing
 print("GOT:")
-print(wordsPosTagged)
+print(articleWordsCleansed)
